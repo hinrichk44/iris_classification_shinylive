@@ -7,27 +7,19 @@ library(shinydashboard)
 library(shinydashboardPlus)
 library(tidyverse)
 library(tidymodels)
-library(here)
+library(bslib)
 
 
-# Where "here thinks the root is
-# here()
-# Get a detailed explanation of why "here" picked that directory.
-# here::dr_here()
+
 
 
 
 
 # 2.0 Loading Files ----
 
-# The source() function is for loading R scripts (i.e., .R files), not RDS files.
-# all_iris_recipes <- read_rds("Custom_Iris_Models/iris_recipes_tbl.rds")
-# all_iris_models <- read_rds("Custom_Iris_Models/iris_models_tbl.rds")
 
-# I am having trouble with this app being used on other's laptops
-# The file structure is not working
-all_iris_recipes <- read_rds("Custom_Iris_Models/iris_recipes_tbl.rds")
-all_iris_models <- read_rds("Custom_Iris_Models/iris_models_tbl.rds")
+all_iris_recipes <- read_rds("Iris_Models/iris_recipes_tbl.rds")
+all_iris_models <- read_rds("Iris_Models/iris_models_tbl.rds")
 
 
 # 3.0 UI ----
