@@ -9,6 +9,7 @@ library(tidyverse)
 library(tidymodels)
 library(bslib)
 library(shinylive)
+library(httpuv)
 
 
 
